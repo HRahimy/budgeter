@@ -1,16 +1,17 @@
 # budgeter
 
-A new Flutter project.
+Simple project for demonstrating my development workflow.
 
-## Getting Started
+## Application design
 
-This project is a starting point for a Flutter application.
+### Color schema
 
-A few resources to get you started if this is your first Flutter project:
+Used [google color tool](https://material.io/resources/color) to play around and decide on color
+scheme for the app.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Primary color: white. Secondary color: cyan(#00bcd4).
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+See [here](https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=ECEFF1&secondary.color=00BCD4)
+for full color mapping details.
+
+> Note: I wanted to incorporate green colors in the app because of the psychological associations humans have with that color. See [here](https://www.apptunix.com/blog/mobile-app-color-themes/) to learn more. I ultimately pick cyan because I prefer blue and the psychological associations with it also favors the feelings we want induce in users.
