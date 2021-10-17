@@ -1,3 +1,4 @@
+import 'package:budgeter/budgets/widgets/budgets_form_screen.dart';
 import 'package:flutter/material.dart';
 
 class BudgetsScreen extends StatelessWidget {
@@ -20,7 +21,12 @@ class BudgetsScreen extends StatelessWidget {
         child: Text('Budgets screen'),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pushNamed(
+            context,
+            BudgetsFormScreen.routeName,
+          );
+        },
         child: const Icon(Icons.add),
       ),
     );

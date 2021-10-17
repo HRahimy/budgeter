@@ -1,4 +1,5 @@
 import 'package:budgeter/budgeter_routes.dart';
+import 'package:budgeter/budgeter_theme.dart';
 import 'package:budgeter/budgets/widgets/budgets_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -31,6 +32,7 @@ class _AppState extends State<_App> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: BudgeterTheme.theme,
       navigatorKey: _navigatorKey,
       initialRoute: BudgetsScreen.routeName,
       routes: BudgeterRoutes().routes(context),
