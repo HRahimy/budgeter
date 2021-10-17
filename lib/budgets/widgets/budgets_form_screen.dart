@@ -1,3 +1,4 @@
+import 'package:budgeter/models/budget.dart';
 import 'package:flutter/material.dart';
 
 class BudgetsFormScreen extends StatelessWidget {
@@ -35,20 +36,34 @@ class _Form extends StatelessWidget {
 }
 
 class _CurrencyInputField extends StatelessWidget {
+  List<DropdownMenuItem<Currency>> get _menuItems {
+    return Currency.values.map((currency) {
+      switch (currency) {
+        case Currency.none:
+          return DropdownMenuItem(
+            value: currency,
+            child: const Text('None'),
+          );
+        case Currency.afn:
+          return DropdownMenuItem(
+            value: currency,
+            child: const Text('AFN'),
+          );
+        case Currency.usd:
+          return DropdownMenuItem(
+            value: currency,
+            child: const Text('USD'),
+          );
+      }
+    }).toList();
+  }
+
   @override
   Widget build(BuildContext context) {
     return DropdownButtonFormField(
       onChanged: (value) {},
-      items: const [
-        DropdownMenuItem(
-          value: 1,
-          child: Text('first'),
-        ),
-        DropdownMenuItem(
-          value: 2,
-          child: Text('second'),
-        ),
-      ],
+      decoration: const InputDecoration(labelText: 'Currency'),
+      items: _menuItems,
     );
   }
 }
