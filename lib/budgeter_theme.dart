@@ -12,6 +12,14 @@ class BudgeterTheme {
       floatingActionButtonTheme: const FloatingActionButtonThemeData(
         backgroundColor: highlightColor,
       ),
+      buttonTheme: const ButtonThemeData(
+        buttonColor: highlightColor,
+      ),
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          primary: highlightColor,
+        ),
+      ),
       appBarTheme: const AppBarTheme(
         backgroundColor: Colors.white,
         titleTextStyle: TextStyle(
